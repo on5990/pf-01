@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-function Tech() {
+function Tech({ refProp }) {
   return (
     <>
-      <div className="tech-div">
+      <div className="tech-div" ref={refProp}>
         <h1>Tecnologías</h1>
         <ul className="tech-ul">
           <li title="JavaScript">

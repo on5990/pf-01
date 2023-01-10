@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-function About() {
+function About({ refProp }) {
   return (
     <>
-      <div className="about-div">
+      <div className="about-div" ref={refProp}>
         <h1>Oscar Navarro</h1>
         <h2>Desarrollador de software</h2>
         <p>

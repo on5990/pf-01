@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-function Contact() {
+function Contact({ refProp }) {
   return (
     <>
-      <div className="contact-div">
+      <div className="contact-div" ref={refProp}>
         <h1>Contáctame</h1>
         <div className="content">
           <div className="form">

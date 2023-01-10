@@ -1,15 +1,29 @@
 import React from "react";
 
-function Header() {
+function Header({ refs }) {
+  const { refAbout, refProjects, refTech, refContact } = refs;
+  const goToAbout = () => {
+    console.log("CLICKED ABOUT");
+    refAbout.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const goToProjects = () => {
+    refProjects.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const goToTech = () => {
+    refTech.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const goToContact = () => {
+    refContact.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <header>
         <nav>
           <ul>
-            <li>Acerca de mí</li>
-            <li>Proyectos</li>
-            <li>Tecnologías</li>
-            <li>Contáctame</li>
+            <li onClick={goToAbout}>Acerca de mí</li>
+            <li onClick={goToProjects}>Proyectos</li>
+            <li onClick={goToTech}>Tecnologías</li>
+            <li onClick={goToContact}>Contáctame</li>
           </ul>
         </nav>
       </header>

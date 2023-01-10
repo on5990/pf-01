@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-function Projects() {
+function Projects({ refProp }) {
   return (
     <>
-      <div className="projects-div">
+      <div className="projects-div" ref={refProp}>
         <h1>Proyectos</h1>
         <div className="projects-container">
           <div className="project">
