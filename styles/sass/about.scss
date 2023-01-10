@@ -1,6 +1,7 @@
-.about {
-  padding-top: 20vh;
-  padding-left: 15%;
+.about-div {
+  margin-top: 20vh;
+  margin-left: 15%;
+  margin-bottom: 10vh;
   height: auto;
   width: 40vw;
   h1 {
@@ -28,11 +29,13 @@
     color: $blue-1;
     margin-top: 2vh;
     font-size: 1.3rem;
+    border: none;
     font-family: $font-1;
     cursor: pointer;
     padding: 0.3rem;
     &:hover {
       background: $dark-green;
+      box-shadow: 0 0 5px $green-1;
     }
   }
 }

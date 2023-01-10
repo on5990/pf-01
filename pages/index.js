@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Header from "../src/components/Header";
+import About from "../src/components/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,19 +14,54 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <div className="about">
-          <h1>Oscar Navarro</h1>
-          <h2>Desarrollador de software</h2>
-          <p>
-            Soy un estudiante universitario de ingeniería informática, con un
-            fuerte interés en el desarrollo web, y estoy motivado para aplicar
-            mis conocimientos y habilidades en proyectos profesionales.
-          </p>
-          <p>
-            Educación: USACH - Ingeniería de Ejecución en Computación e
-            Informática
-          </p>
-          <button>Descargar CV</button>
+        <About />
+        <div className="projects-div">
+          <h1>Proyectos</h1>
+          <div className="projects-container">
+            <div className="project">
+              <div className="project-content">
+                <div className="image-container">
+                  <Image
+                    fill
+                    alt="proy1"
+                    src="https://images.unsplash.com/photo-1673251851064-c9bfddfd2b5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  />
+                </div>
+                <div className="text-container">
+                  <h1>Proyecto 1</h1>
+                  <p>
+                    leo vel fringilla est ullamcorper eget nulla facilisi etiam
+                    dignissim diam quis enim lobortis scelerisque fermentum dui
+                    faucibus in ornare quam viverra orci sagittis eu volutpat
+                    odio facilisis mauris sit
+                  </p>
+                  <div className="tags-container">
+                    <div className="tag">ReactJS</div>
+                    <div className="tag">NodeJS</div>
+                    <div className="tag">PostgreSQL</div>
+                  </div>
+                </div>
+              </div>
+              <div className="button-container">
+                <button>
+                  <img
+                    src="../../public/logos/css_logo.png"
+                    alt="Github"
+                    // width={100}
+                    // height={100}
+                  />
+                  <p>Repositorio</p>
+                </button>
+                <button>Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="tech-div">
+          <h1>Tecnologías</h1>
+        </div>
+        <div className="contact-div">
+          <h1>Contáctame</h1>
         </div>
       </main>
     </>
