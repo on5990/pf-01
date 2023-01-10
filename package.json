@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build:css": "sass styles/sass/manifest.scss styles/css/main.css",
+    "dev:css": "nodemon -e scss -x \"npm run build:css\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -12,6 +14,10 @@
     "@next/font": "13.1.1",
     "next": "13.1.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

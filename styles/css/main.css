@@ -1,0 +1,33 @@
+header {
+  margin: 0;
+  padding: 0;
+  background: blue;
+  height: 5vh;
+  width: 100%;
+  min-height: 20px;
+}
+header nav {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: purple;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: orange;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+header nav ul li {
+  font-size: 1.2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
