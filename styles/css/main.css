@@ -167,9 +167,7 @@ header nav ul li:hover {
   width: 50%;
   position: relative;
   border-radius: 10px;
-}
-.project .project-content .image-container .proy-image {
-  border-radius: 10px;
+  overflow: hidden;
 }
 .project .project-content .text-container {
   height: 100%;
