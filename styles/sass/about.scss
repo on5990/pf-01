@@ -25,8 +25,10 @@
     font-size: 1.3rem;
   }
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: $dark-4;
-    color: $blue-1;
     margin-top: 3vh;
     font-size: 1.3rem;
     border: none;
@@ -36,6 +38,17 @@
     &:hover {
       background: $dark-green;
       box-shadow: 0 0 5px $green-1;
+    }
+    .icon-div {
+      width: 2vw;
+      height: 3vh;
+      position: relative;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      color: $blue-1;
+      margin-left: 0.5vw;
     }
   }
 }

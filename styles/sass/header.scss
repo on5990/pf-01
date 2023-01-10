@@ -31,6 +31,7 @@ header {
       align-items: flex-end;
       justify-content: space-between;
       flex-wrap: wrap;
+      transform: scale(1);
       li {
         font-size: 1.2rem;
         color: $green-1;

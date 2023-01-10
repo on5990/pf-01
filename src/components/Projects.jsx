@@ -53,6 +53,12 @@ function Projects() {
             </div>
           </div>
         </div>
+        <button className="see-more-btn">
+          <div className="icon-div">
+            <Image src="/icons/blue-arrow-down.png" alt="arrow" fill />
+          </div>
+          <p>Ver más</p>
+        </button>
       </div>
     </>
   );

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function About() {
@@ -15,7 +16,12 @@ function About() {
           Educación: USACH - Ingeniería de Ejecución en Computación e
           Informática
         </p>
-        <button>Descargar CV</button>
+        <button>
+          <div className="icon-div">
+            <Image src="/icons/blue-user.png" alt="user" fill />
+          </div>
+          <p>Descargar CV</p>
+        </button>
       </div>
     </>
   );
