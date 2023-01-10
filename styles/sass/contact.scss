@@ -1,6 +1,107 @@
 .contact-div {
   padding-left: 15%;
+  margin-right: 10%;
+  width: 75%;
+  height: auto;
+  margin-bottom: 10vh;
   h1 {
     color: $green-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+  }
+  .content {
+    // background: green;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1%;
+    padding-top: 1%;
+    margin-top: 3vh;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+    .form {
+      display: flex;
+      flex-direction: column;
+      // background: blue;
+      width: 60%;
+      height: 100%;
+      label {
+        font-size: 1.5rem;
+        color: $green-1;
+        margin-bottom: 20px;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 2vh;
+        border-radius: 3px;
+        min-height: 2rem;
+        &:keyup {
+          box-shadow: 0 0 10px 2px $green-1;
+        }
+      }
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 2vh;
+        min-height: 5rem;
+        max-width: 100%;
+        min-width: 100%;
+        &:hover {
+          box-shadow: 0 0 10px 2px $green-1;
+        }
+      }
+      .submit-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .submit-btn {
+          width: 20%;
+          color: $blue-1;
+          margin-top: 1vh;
+          background: $dark-4;
+          border: none;
+          font-family: $font-1;
+          font-size: 1.3rem;
+          cursor: pointer;
+          padding: 0.3rem;
+          border-radius: 5px;
+          &:hover {
+            background: $dark-green;
+            box-shadow: 0 0 5px $green-1;
+          }
+        }
+      }
+    }
+    .contact {
+      background: blueviolet;
+      width: 40%;
+      margin-left: 3vw;
+      box-sizing: border-box;
+      height: 100%;
+      p {
+        color: $green-1;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      .links-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: darkcyan;
+        width: 100%;
+        height: auto;
+        .logo-div {
+          cursor: pointer;
+          margin-left: 0.5vw;
+          background: darkgray;
+          width: 5vw;
+          height: 8vh;
+          position: relative;
+        }
+      }
+    }
   }
 }

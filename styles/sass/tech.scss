@@ -1,6 +1,44 @@
 .tech-div {
   padding-left: 15%;
+  margin-right: 10%;
+  width: 75%;
+  height: auto;
+  margin-bottom: 10vh;
   h1 {
     color: $green-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+  }
+  ul {
+    margin-top: 3vh;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    min-height: 10vh;
+    justify-content: center;
+    // background: red;
+    li {
+      background: $green-3;
+      border-radius: 50px;
+      height: 5vw;
+      margin-left: 1%;
+      margin-bottom: 1%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5vw;
+      .image-container {
+        height: 4vw;
+        width: 4vw;
+        position: relative;
+      }
+    }
   }
 }
