@@ -29,16 +29,22 @@
       label {
         font-size: 1.5rem;
         color: $green-1;
-        margin-bottom: 20px;
+        margin: 0;
+        padding: 0;
+        transform: translateY(30%);
+        // margin-bottom: 5px;
+        display: flex;
       }
       input {
         width: 100%;
         box-sizing: border-box;
         display: inline-block;
-        margin-bottom: 2vh;
+        margin-bottom: 1vh;
         // border: none;
         border-radius: 3px;
         min-height: 2rem;
+        font-size: 1.3rem;
+        font-family: $font-1;
         &:hover {
           box-shadow: 0 0 10px 2px $green-1;
         }
@@ -46,13 +52,40 @@
       textarea {
         width: 100%;
         box-sizing: border-box;
-        margin-bottom: 2vh;
+        margin-bottom: 1vh;
         min-height: 5rem;
         max-width: 100%;
         min-width: 100%;
+        font-size: 1.3rem;
+        font-family: $font-1;
         &:hover {
           box-shadow: 0 0 10px 2px $green-1;
         }
+      }
+      // br {
+      //   margin: 0;
+      //   padding: 0;
+      // }
+      .error {
+        margin: 0;
+        padding: 0;
+        color: $red-1;
+      }
+      .success-msg {
+        margin: 0;
+        padding: 6px;
+        font-size: 1.3rem;
+        background: $green-2;
+        color: $light-1;
+        border-radius: 5px;
+      }
+      .fail-msg {
+        margin: 0;
+        padding: 6px;
+        font-size: 1.3rem;
+        background: $red-1;
+        color: $light-1;
+        border-radius: 5px;
       }
       .submit-div {
         width: 100%;

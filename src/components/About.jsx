@@ -2,6 +2,15 @@ import Image from "next/image";
 import React from "react";
 
 function About({ refProp }) {
+  const handleClick = () => {
+    let link = document.createElement("a");
+    link.href = "pdf/cv_oscar_navarro.pdf";
+    link.download = "cv_oscar_navarro.pdf";
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <div className="about-div" ref={refProp}>
@@ -16,7 +25,7 @@ function About({ refProp }) {
           Educación: USACH - Ingeniería de Ejecución en Computación e
           Informática
         </p>
-        <button>
+        <button onClick={handleClick}>
           <div className="icon-div">
             <Image src="/icons/blue-user.png" alt="user" fill />
           </div>

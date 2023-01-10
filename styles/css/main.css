@@ -314,15 +314,20 @@ header nav ul li:hover {
 .contact-div .content .form label {
   font-size: 1.5rem;
   color: #0bb3ae;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(30%);
+  display: flex;
 }
 .contact-div .content .form input {
   width: 100%;
   box-sizing: border-box;
   display: inline-block;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   border-radius: 3px;
   min-height: 2rem;
+  font-size: 1.3rem;
+  font-family: "Times New Roman";
 }
 .contact-div .content .form input:hover {
   box-shadow: 0 0 10px 2px #0bb3ae;
@@ -330,13 +335,36 @@ header nav ul li:hover {
 .contact-div .content .form textarea {
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   min-height: 5rem;
   max-width: 100%;
   min-width: 100%;
+  font-size: 1.3rem;
+  font-family: "Times New Roman";
 }
 .contact-div .content .form textarea:hover {
   box-shadow: 0 0 10px 2px #0bb3ae;
+}
+.contact-div .content .form .error {
+  margin: 0;
+  padding: 0;
+  color: #a80606;
+}
+.contact-div .content .form .success-msg {
+  margin: 0;
+  padding: 6px;
+  font-size: 1.3rem;
+  background: #118e75;
+  color: #eeeeee;
+  border-radius: 5px;
+}
+.contact-div .content .form .fail-msg {
+  margin: 0;
+  padding: 6px;
+  font-size: 1.3rem;
+  background: #a80606;
+  color: #eeeeee;
+  border-radius: 5px;
 }
 .contact-div .content .form .submit-div {
   width: 100%;
