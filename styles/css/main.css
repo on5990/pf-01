@@ -1,33 +1,47 @@
 header {
   margin: 0;
   padding: 0;
-  background: blue;
   height: 5vh;
   width: 100%;
   min-height: 20px;
+  border-bottom: 3px solid #0198af;
 }
 header nav {
   margin: 0;
   padding: 0;
+  margin-left: 20%;
+  margin-right: 20%;
   height: 100%;
-  background: purple;
+  display: flex;
+  justify-content: space-around;
 }
 header nav ul {
   margin: 0;
   padding: 0;
+  width: 60%;
+  height: 100%;
   list-style: none;
-  background: orange;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 header nav ul li {
   font-size: 1.2rem;
+  color: #0bb3ae;
+  cursor: pointer;
+}
+header nav ul li:hover {
+  color: #118e75;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: "Times New Roman";
+  background: #111111;
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
