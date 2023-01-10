@@ -4,7 +4,7 @@ header {
   height: 5vh;
   width: 100%;
   min-height: 20px;
-  border-bottom: 3px solid #0198af;
+  border-bottom: 2px solid #0198af;
 }
 header nav {
   margin: 0;
@@ -33,6 +33,45 @@ header nav ul li {
 }
 header nav ul li:hover {
   color: #118e75;
+}
+
+.about {
+  padding-top: 20vh;
+  padding-left: 15%;
+  height: auto;
+  width: 40vw;
+}
+.about h1 {
+  margin: 0;
+  padding: 0;
+  color: #0bb3ae;
+  font-size: 3.5rem;
+}
+.about h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 1vh;
+  color: #eeeeee;
+  font-size: 2rem;
+}
+.about p {
+  margin: 0;
+  padding: 0;
+  margin-top: 1vh;
+  color: #eeeeee;
+  font-size: 1.3rem;
+}
+.about button {
+  background: #282e2d;
+  color: #0198af;
+  margin-top: 2vh;
+  font-size: 1.3rem;
+  font-family: "Times New Roman";
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.about button:hover {
+  background: #344b47;
 }
 
 body {

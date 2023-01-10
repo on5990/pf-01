@@ -1,0 +1,38 @@
+.about {
+  padding-top: 20vh;
+  padding-left: 15%;
+  height: auto;
+  width: 40vw;
+  h1 {
+    margin: 0;
+    padding: 0;
+    color: $green-1;
+    font-size: 3.5rem;
+  }
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 1vh;
+    color: $light-1;
+    font-size: 2rem;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    margin-top: 1vh;
+    color: $light-1;
+    font-size: 1.3rem;
+  }
+  button {
+    background: $dark-4;
+    color: $blue-1;
+    margin-top: 2vh;
+    font-size: 1.3rem;
+    font-family: $font-1;
+    cursor: pointer;
+    padding: 0.3rem;
+    &:hover {
+      background: $dark-green;
+    }
+  }
+}
