@@ -38,11 +38,10 @@
       height: 100%;
       width: 50%;
       position: relative;
-      //   .proy-image {
-      //     height: 100%;
-      //     width: 50%;
-      //   }
-      //   display: none;
+      border-radius: 10px;
+      .proy-image {
+        border-radius: 10px;
+      }
     }
     .text-container {
       height: 100%;
@@ -62,7 +61,7 @@
     background: red;
     display: flex;
     justify-content: space-between;
-    height: 10%;
+    height: 12%;
     width: 100%;
     margin-top: 1vh;
     button {
@@ -70,11 +69,13 @@
       background: $green-1;
       border: none;
       width: 40%;
+      height: 100%;
       font-family: $font-1;
       font-size: 1rem;
       cursor: pointer;
       display: flex;
       align-items: center;
+      justify-content: center;
       &:hover {
         background: $green-2;
       }
@@ -96,4 +97,17 @@
     height: 1rem;
     padding: 0.2rem;
   }
+}
+.git-logo-div {
+  height: 90%;
+  width: 1.6vw;
+  position: relative;
+  margin-right: 3%;
+}
+
+.eye-logo-div {
+  height: 70%;
+  width: 1.8vw;
+  position: relative;
+  margin-right: 3%;
 }

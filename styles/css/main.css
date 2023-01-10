@@ -1,9 +1,13 @@
 header {
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
+  background-color: #111111;
   height: 5vh;
   width: 100%;
   min-height: 20px;
+  position: fixed;
   border-bottom: 2px solid #0198af;
 }
 header nav {
@@ -51,21 +55,21 @@ header nav ul li:hover {
 .about-div h2 {
   margin: 0;
   padding: 0;
-  margin-top: 1vh;
+  margin-top: 2vh;
   color: #eeeeee;
   font-size: 2rem;
 }
 .about-div p {
   margin: 0;
   padding: 0;
-  margin-top: 1vh;
+  margin-top: 2vh;
   color: #eeeeee;
   font-size: 1.3rem;
 }
 .about-div button {
   background: #282e2d;
   color: #0198af;
-  margin-top: 2vh;
+  margin-top: 3vh;
   font-size: 1.3rem;
   border: none;
   font-family: "Times New Roman";
@@ -120,6 +124,10 @@ header nav ul li:hover {
   height: 100%;
   width: 50%;
   position: relative;
+  border-radius: 10px;
+}
+.project .project-content .image-container .proy-image {
+  border-radius: 10px;
 }
 .project .project-content .text-container {
   height: 100%;
@@ -138,7 +146,7 @@ header nav ul li:hover {
   background: red;
   display: flex;
   justify-content: space-between;
-  height: 10%;
+  height: 12%;
   width: 100%;
   margin-top: 1vh;
 }
@@ -147,11 +155,13 @@ header nav ul li:hover {
   background: #0bb3ae;
   border: none;
   width: 40%;
+  height: 100%;
   font-family: "Times New Roman";
   font-size: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .project .button-container button:hover {
   background: #118e75;
@@ -172,6 +182,20 @@ header nav ul li:hover {
   width: fit-content;
   height: 1rem;
   padding: 0.2rem;
+}
+
+.git-logo-div {
+  height: 90%;
+  width: 1.6vw;
+  position: relative;
+  margin-right: 3%;
+}
+
+.eye-logo-div {
+  height: 70%;
+  width: 1.8vw;
+  position: relative;
+  margin-right: 3%;
 }
 
 .tech-div {

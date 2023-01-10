@@ -44,15 +44,23 @@ export default function Home() {
               </div>
               <div className="button-container">
                 <button>
-                  <img
-                    src="../../public/logos/css_logo.png"
-                    alt="Github"
-                    // width={100}
-                    // height={100}
-                  />
+                  <div className="git-logo-div">
+                    <Image src="/logos/git_logo1.png" alt="Github" fill />
+                  </div>
+
                   <p>Repositorio</p>
                 </button>
-                <button>Demo</button>
+                <button>
+                  <div className="eye-logo-div">
+                    <Image
+                      className="proy-image"
+                      src="/icons/eye.png"
+                      alt="Github"
+                      fill
+                    />
+                  </div>
+                  <p>Demo</p>
+                </button>
               </div>
             </div>
           </div>
