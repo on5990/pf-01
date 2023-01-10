@@ -25,6 +25,7 @@
     width: 100%;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .see-more-btn {
     background: $dark-4;
@@ -54,8 +55,9 @@
 .project {
   background: $dark-4;
   height: 40vh;
-  width: 45%;
+  width: 46%;
   padding: 1%;
+  margin-bottom: 1vh;
   // background: yellow;
   .project-content {
     display: flex;
@@ -97,7 +99,7 @@
       color: $dark-1;
       background: $green-1;
       border: none;
-      width: 40%;
+      width: 48%;
       height: 100%;
       font-family: $font-1;
       font-size: 1rem;

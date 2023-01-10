@@ -69,7 +69,7 @@ function Contact({ refProp }) {
         <div className="content">
           <div className="form">
             <form>
-              <label for="name">Nombre</label>
+              <label htmlFor="name">Nombre</label>
               <br />
               <input
                 type="text"
@@ -89,7 +89,7 @@ function Contact({ refProp }) {
               ></input>
               <p className="error">{errors.nameErr}</p>
               <br />
-              <label for="email">E-Mail</label>
+              <label htmlFor="email">E-Mail</label>
               <br />
               <input
                 type="text"
@@ -109,7 +109,7 @@ function Contact({ refProp }) {
               ></input>
               <p className="error">{errors.emailErr}</p>
               <br />
-              <label for="message">Mensaje</label>
+              <label htmlFor="message">Mensaje</label>
               <br />
               <textarea
                 type="text"

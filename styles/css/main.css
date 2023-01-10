@@ -123,6 +123,7 @@ header nav ul li:hover {
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .projects-div .see-more-btn {
   background: #282e2d;
@@ -152,8 +153,9 @@ header nav ul li:hover {
 .project {
   background: #282e2d;
   height: 40vh;
-  width: 45%;
+  width: 46%;
   padding: 1%;
+  margin-bottom: 1vh;
 }
 .project .project-content {
   display: flex;
@@ -192,7 +194,7 @@ header nav ul li:hover {
   color: #000000;
   background: #0bb3ae;
   border: none;
-  width: 40%;
+  width: 48%;
   height: 100%;
   font-family: "Times New Roman";
   font-size: 1rem;
@@ -431,7 +433,6 @@ body {
   background: #111111;
   width: 100%;
   height: auto;
-  max-zoom: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

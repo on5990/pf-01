@@ -1,0 +1,74 @@
+{
+  "projects": [
+    {
+      "id": "17816ff4-8352-4c85-aef8-cbf0792409a3",
+      "name": "Proyecto 1",
+      "description": "11et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
+      "image": "/logos/git_logo1.png",
+      "tech-used": [
+        { "name": "ReactJS" },
+        { "name": "NodeJS" },
+        { "name": "PostgreSQL" },
+        { "name": "Sequelize" }
+      ]
+    },
+    {
+      "id": "3959b514-d815-4649-9102-c8a74d65e5c8",
+      "name": "Proyecto 2",
+      "description": "22et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
+      "image": "/logos/git_logo1.png",
+      "tech-used": [
+        { "name": "ReactJS" },
+        { "name": "NodeJS" },
+        { "name": "PostgreSQL" },
+        { "name": "Sequelize" }
+      ]
+    },
+    {
+      "id": "834974b4-9a3b-41dd-9686-4167d1688882",
+      "name": "Proyecto 3",
+      "description": "33et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
+      "image": "/logos/git_logo1.png",
+      "tech-used": [
+        { "name": "ReactJS" },
+        { "name": "NodeJS" },
+        { "name": "PostgreSQL" },
+        { "name": "Sequelize" }
+      ]
+    },
+    {
+      "id": "14d008d1-8fc6-4fea-b14f-6a94d7d901d7",
+      "name": "Proyecto 4",
+      "description": "44et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
+      "image": "/logos/git_logo1.png",
+      "tech-used": [
+        { "name": "ReactJS" },
+        { "name": "NodeJS" },
+        { "name": "PostgreSQL" },
+        { "name": "Sequelize" }
+      ]
+    },
+    {
+      "id": "895feb67-f324-43e4-8b11-2bd6af1a1732",
+      "name": "Proyecto 5",
+      "description": "55et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
+      "image": "/logos/git_logo1.png",
+      "tech-used": [
+        { "name": "ReactJS" },
+        { "name": "NodeJS" },
+        { "name": "PostgreSQL" },
+        { "name": "Sequelize" }
+      ]
+    }
+  ],
+  "techlist": [
+    { "name": "JavaScript", "logo": "/logos/js_logo.png" },
+    { "name": "HTML", "logo": "/logos/html_logo.png" },
+    { "name": "CSS", "logo": "/logos/css_logo.png" },
+    { "name": "NodeJS", "logo": "/logos/node_logo.png" },
+    { "name": "Express", "logo": "/logos/exp_logo2.png" },
+    { "name": "ReactJS", "logo": "/logos/react_logo.png" },
+    { "name": "PostgreSQL", "logo": "/logos/psql_logo.png" },
+    { "name": "Sequelize", "logo": "/logos/sequelize_logo.png" }
+  ]
+}

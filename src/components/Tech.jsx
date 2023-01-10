@@ -1,13 +1,16 @@
 import React from "react";
 import Image from "next/image";
 
-function Tech({ refProp }) {
+function Tech({ refProp, data }) {
   return (
     <>
       <div className="tech-div" ref={refProp}>
         <h1>Tecnologías</h1>
         <ul className="tech-ul">
-          <li title="JavaScript">
+          {data.map((tech) => {
+            return <Item key={tech.name} data={tech} />;
+          })}
+          {/* <li title="JavaScript">
             <div className="image-container">
               <Image fill alt="JavaScript" src="/logos/js_logo.png" />
             </div>
@@ -46,11 +49,21 @@ function Tech({ refProp }) {
             <div className="image-container">
               <Image fill alt="JavaScript" src="/logos/sequelize_logo.png" />
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
     </>
   );
 }
-
+function Item({ data }) {
+  return (
+    <>
+      <li title={data.name}>
+        <div className="image-container">
+          <Image fill alt={data.name} src={data.logo} />
+        </div>
+      </li>
+    </>
+  );
+}
 export default Tech;

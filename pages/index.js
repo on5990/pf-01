@@ -9,7 +9,7 @@ import { useRef } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ data }) {
   const refAbout = useRef(null);
   const refProjects = useRef(null);
   const refTech = useRef(null);
@@ -23,10 +23,18 @@ export default function Home() {
       <Header refs={refs} />
       <main>
         <About refProp={refAbout} />
-        <Projects refProp={refProjects} />
-        <Tech refProp={refTech} />
+        <Projects refProp={refProjects} data={data.projects} />
+        <Tech refProp={refTech} data={data.techlist} />
         <Contact refProp={refContact} />
       </main>
     </>
   );
+}
+export async function getServerSideProps() {
+  let data = await import("/data/info.json");
+  data = JSON.stringify(data);
+  data = JSON.parse(data);
+  return {
+    props: { data: data },
+  };
 }
