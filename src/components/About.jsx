@@ -3,9 +3,18 @@ import React from "react";
 
 function About({ refProp }) {
   const handleClick = () => {
+    // trigger download
     let link = document.createElement("a");
     link.href = "pdf/cv_oscar_navarro.pdf";
     link.download = "cv_oscar_navarro.pdf";
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    // open in another tab
+    link = document.createElement("a");
+    link.href = "pdf/cv_oscar_navarro.pdf";
+    link.target = "_blank";
     link.style.display = "none";
     document.body.appendChild(link);
     link.click();
