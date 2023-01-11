@@ -1,22 +1,64 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 function Projects({ refProp, data }) {
+  const [shownProjects, setShownProjects] = useState([]);
+  const [maxAmount, setMaxAmount] = useState(2);
+  const [showSeemore, setShowSeeMore] = useState(false);
+  const [showSeeLess, setShowSeeLess] = useState(false);
+  const showMore = () => {
+    setMaxAmount((prev) => {
+      return prev + 2;
+    });
+  };
+  const showLess = () => {
+    setMaxAmount(2);
+  };
+  useEffect(() => {
+    if (data && data.length <= maxAmount && data.length > 2) {
+      setShowSeeLess(true);
+      setShowSeeMore(false);
+    } else if (data && data.length > maxAmount) {
+      setShowSeeMore(true);
+      setShowSeeLess(false);
+    }
+  }, [, maxAmount]);
+  useEffect(() => {
+    let counter = 1;
+    const newList = [];
+    data.map((proj) => {
+      if (counter <= maxAmount) {
+        newList.push(proj);
+        counter = counter + 1;
+      }
+    });
+    setShownProjects(newList);
+  }, [maxAmount]);
   return (
     <>
       <div className="projects-div" ref={refProp}>
         <h1>Proyectos</h1>
         <div className="projects-container">
-          {data.map((project) => {
+          {shownProjects.map((project) => {
             return <Project key={project.id} data={project} />;
           })}
         </div>
-        <button className="see-more-btn">
-          <div className="icon-div">
-            <Image src="/icons/blue-arrow-down.png" alt="arrow" fill />
-          </div>
-          <p>Ver más</p>
-        </button>
+        {showSeemore && (
+          <button onClick={showMore} className="btn">
+            <div className="icon-div">
+              <Image src="/icons/blue-arrow-down.png" alt="arrow" fill />
+            </div>
+            <p>Ver más</p>
+          </button>
+        )}
+        {showSeeLess && (
+          <button onClick={showLess} className="btn">
+            <div className="icon-div">
+              <Image src="/icons/blue-arrow-up.png" alt="arrow" fill />
+            </div>
+            <p>Ver menos</p>
+          </button>
+        )}
       </div>
     </>
   );

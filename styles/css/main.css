@@ -125,7 +125,7 @@ header nav ul li:hover {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.projects-div .see-more-btn {
+.projects-div .btn {
   background: #282e2d;
   cursor: pointer;
   color: #0198af;
@@ -139,11 +139,11 @@ header nav ul li:hover {
   justify-content: center;
   margin-top: 1vh;
 }
-.projects-div .see-more-btn:hover {
+.projects-div .btn:hover {
   background: #344b47;
   box-shadow: 0 0 5px #0bb3ae;
 }
-.projects-div .see-more-btn .icon-div {
+.projects-div .btn .icon-div {
   width: 2vw;
   height: 3vh;
   margin-right: 0.5vw;
