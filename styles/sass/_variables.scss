@@ -10,4 +10,9 @@ $dark-3: #1b1e1e;
 $dark-4: #282e2d;
 $dark-green: #344b47;
 
-$font-1: "Times New Roman";
+@font-face {
+  font-family: "Lusitana";
+  src: url(/fonts/lusitana-v13-latin-regular.woff) format("woff");
+}
+$font-1: "Lusitana";
+$font-2: "Times New Roman";

@@ -58,6 +58,9 @@ function Contact({ refProp }) {
     if (pass) {
       const submitData = async () => {
         setShowMessage(true);
+        setData((prev) => {
+          return { ...prev, name: "", email: "", message: "" };
+        });
       };
       submitData();
     }

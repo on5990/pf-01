@@ -11,10 +11,6 @@
         { "name": "PostgreSQL" },
         { "name": "Sequelize" },
         { "name": "HTML" },
-        { "name": "CSS" },
-        { "name": "CSS" },
-        { "name": "CSS" },
-        { "name": "CSS" },
         { "name": "CSS" }
       ],
       "repoLink": "https://github.com/on5990",
@@ -45,7 +41,7 @@
         { "name": "PostgreSQL" },
         { "name": "Sequelize" }
       ],
-      "repoLink": "",
+      "repoLink": "https://github.com/on5990",
       "demoLink": ""
     },
     {
@@ -60,7 +56,7 @@
         { "name": "Sequelize" }
       ],
       "repoLink": "",
-      "demoLink": ""
+      "demoLink": "https://github.com/on5990"
     },
     {
       "id": "895feb67-f324-43e4-8b11-2bd6af1a1732",

@@ -7,7 +7,6 @@ function Projects({ refProp, data }) {
   const [showSeemore, setShowSeeMore] = useState(false);
   const [showSeeLess, setShowSeeLess] = useState(false);
   const showMore = () => {
-    console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAaa");
     setMaxAmount((prev) => {
       return prev + 2;
     });
@@ -65,16 +64,6 @@ function Projects({ refProp, data }) {
   );
 }
 function Project({ data }) {
-  const goToLink = (givenLink) => {
-    console.log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHhhhhh");
-    let newLink = document.createElement("a");
-    newLink.href = givenLink;
-    newLink.style.display = "none";
-    newLink.target = "_blank";
-    document.body.appendChild(newLink);
-    newLink.click();
-    document.body.removeChild(newLink);
-  };
   return (
     <>
       <div className="project">
@@ -94,27 +83,31 @@ function Project({ data }) {
             })}
         </div>
         <div className="button-container">
-          <button
-          // onClick={goToLink(data.repoLink)}
-          >
-            <div className="git-logo-div">
-              <Image src={data.image} alt="Github" fill />
-            </div>
-            <p>Repositorio</p>
-          </button>
-          <button
-          // onClick={goToLink(data.demoLink)}
-          >
-            <div className="eye-logo-div">
-              <Image
-                className="proy-image"
-                src="/icons/eye.png"
-                alt="Demo"
-                fill
-              />
-            </div>
-            <p>Demo</p>
-          </button>
+          {data.repoLink && (
+            <a href={data.repoLink} target="_blank">
+              <button>
+                <div className="git-logo-div">
+                  <Image src={data.image} alt="Github" fill />
+                </div>
+                <p>Repositorio</p>
+              </button>
+            </a>
+          )}
+          {data.demoLink && (
+            <a href={data.demoLink} target="_blank">
+              <button>
+                <div className="eye-logo-div">
+                  <Image
+                    className="proy-image"
+                    src="/icons/eye.png"
+                    alt="Demo"
+                    fill
+                  />
+                </div>
+                <p>Demo</p>
+              </button>
+            </a>
+          )}
         </div>
       </div>
     </>

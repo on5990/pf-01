@@ -21,9 +21,9 @@
     margin: 0;
     padding: 0;
     font-size: 3rem;
+    text-align: center;
     @media (orientation: portrait) {
       font-size: 2rem;
-      text-align: center;
     }
   }
   .projects-container {
@@ -68,15 +68,15 @@
   height: auto;
   width: 46%;
   min-width: 350px;
-  min-height: 250px;
   padding: 1%;
   margin-bottom: 2vh;
+  border-radius: 5px;
   // background: green;
   .project-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    // background: green;
+    // background: blue;
     width: 100%;
     height: auto;
     .image-container {
@@ -123,23 +123,26 @@
     justify-content: space-between;
     height: auto;
     width: 100%;
-    min-height: 30px;
     margin-top: 1vh;
-    button {
-      color: $dark-1;
-      background: $green-1;
-      border: none;
+    a {
+      height: "auto";
       width: 48%;
-      height: 30px;
-      font-family: $font-1;
-      font-size: 1rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &:hover {
-        background: $green-2;
-        box-shadow: 0 0 5px $green-1;
+      button {
+        color: $dark-1;
+        background: $green-1;
+        border: none;
+        width: 100%;
+        height: 30px;
+        font-family: $font-1;
+        font-size: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background: $green-2;
+          box-shadow: 0 0 5px $green-1;
+        }
       }
     }
   }
@@ -147,7 +150,7 @@
 .tags-container {
   width: 100%;
   height: auto;
-  margin-top: 3px;
+  margin-top: 5px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
