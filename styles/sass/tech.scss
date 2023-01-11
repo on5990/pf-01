@@ -1,15 +1,23 @@
 .tech-div {
   padding-left: 15%;
   margin-right: 10%;
-  padding-top: 5vh;
+  padding-top: 6vh;
   width: 75%;
   height: auto;
   margin-bottom: 10vh;
+  @media (orientation: portrait) {
+    padding-left: 5%;
+    margin-right: 3%;
+    width: 90%;
+  }
   h1 {
     color: $green-1;
     margin: 0;
     padding: 0;
     font-size: 3rem;
+    @media (orientation: portrait) {
+      font-size: 2rem;
+    }
   }
   ul {
     margin-top: 3vh;
@@ -35,9 +43,13 @@
       align-items: center;
       justify-content: center;
       width: 5vw;
+      min-height: 80px;
+      min-width: 80px;
       .image-container {
         height: 4vw;
         width: 4vw;
+        min-height: 60px;
+        min-width: 60px;
         position: relative;
       }
     }

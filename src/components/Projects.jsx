@@ -7,6 +7,7 @@ function Projects({ refProp, data }) {
   const [showSeemore, setShowSeeMore] = useState(false);
   const [showSeeLess, setShowSeeLess] = useState(false);
   const showMore = () => {
+    console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAaa");
     setMaxAmount((prev) => {
       return prev + 2;
     });
@@ -64,6 +65,16 @@ function Projects({ refProp, data }) {
   );
 }
 function Project({ data }) {
+  const goToLink = (givenLink) => {
+    console.log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHhhhhh");
+    let newLink = document.createElement("a");
+    newLink.href = givenLink;
+    newLink.style.display = "none";
+    newLink.target = "_blank";
+    document.body.appendChild(newLink);
+    newLink.click();
+    document.body.removeChild(newLink);
+  };
   return (
     <>
       <div className="project">
@@ -75,25 +86,33 @@ function Project({ data }) {
             <h1>{data.name}</h1>
             <p>{data.description}</p>
             <div className="tags-container">
-              <div className="tag">ReactJS</div>
+              {data.techUsed &&
+                data.techUsed.map((item) => {
+                  return <div className="tag">{item.name}</div>;
+                })}
+              {/* <div className="tag">ReactJS</div>
               <div className="tag">NodeJS</div>
-              <div className="tag">PostgreSQL</div>
+              <div className="tag">PostgreSQL</div> */}
             </div>
           </div>
         </div>
         <div className="button-container">
-          <button>
+          <button
+          // onClick={goToLink(data.repoLink)}
+          >
             <div className="git-logo-div">
               <Image src={data.image} alt="Github" fill />
             </div>
             <p>Repositorio</p>
           </button>
-          <button>
+          <button
+          // onClick={goToLink(data.demoLink)}
+          >
             <div className="eye-logo-div">
               <Image
                 className="proy-image"
                 src="/icons/eye.png"
-                alt="Github"
+                alt="Demo"
                 fill
               />
             </div>

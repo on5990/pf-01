@@ -8,7 +8,7 @@ header {
   background-color: $dark-2;
   height: 5vh;
   width: 100%;
-  min-height: 20px;
+  min-height: 35px;
   position: fixed;
   border-bottom: 2px solid $blue-1;
   nav {
@@ -24,12 +24,14 @@ header {
       margin: 0;
       padding: 0;
       width: 60%;
+
+      min-width: 400px;
       height: 100%;
       list-style: none;
       //   background: orange;
       display: flex;
       align-items: flex-end;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
       transform: scale(1);
       li {
@@ -38,6 +40,9 @@ header {
         cursor: pointer;
         &:hover {
           color: $green-2;
+        }
+        @media (orientation: portrait) {
+          font-size: 1.1rem;
         }
       }
     }

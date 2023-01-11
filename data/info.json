@@ -5,11 +5,13 @@
       "name": "Proyecto 1",
       "description": "11et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
       "image": "/logos/git_logo1.png",
-      "tech-used": [
+      "techUsed": [
         { "name": "ReactJS" },
         { "name": "NodeJS" },
         { "name": "PostgreSQL" },
-        { "name": "Sequelize" }
+        { "name": "Sequelize" },
+        { "name": "HTML" },
+        { "name": "CSS" }
       ],
       "repoLink": "https://github.com/on5990",
       "demoLink": "https://github.com/on5990"
@@ -19,7 +21,7 @@
       "name": "Proyecto 2",
       "description": "22et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
       "image": "/logos/git_logo1.png",
-      "tech-used": [
+      "techUsed": [
         { "name": "ReactJS" },
         { "name": "NodeJS" },
         { "name": "PostgreSQL" },
@@ -33,7 +35,7 @@
       "name": "Proyecto 3",
       "description": "33et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
       "image": "/logos/git_logo1.png",
-      "tech-used": [
+      "techUsed": [
         { "name": "ReactJS" },
         { "name": "NodeJS" },
         { "name": "PostgreSQL" },
@@ -47,7 +49,7 @@
       "name": "Proyecto 4",
       "description": "44et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
       "image": "/logos/git_logo1.png",
-      "tech-used": [
+      "techUsed": [
         { "name": "ReactJS" },
         { "name": "NodeJS" },
         { "name": "PostgreSQL" },
