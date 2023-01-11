@@ -57,7 +57,27 @@ function Contact({ refProp }) {
     }
     if (pass) {
       const submitData = async () => {
-        setShowMessage(true);
+        try {
+          const response = await fetch("/api/message-controller", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: trName,
+              email: trEmail,
+              message: trMessage,
+            }),
+          });
+          if (!response.ok) {
+            setErrMessage(true);
+            throw new Error(`Error: ${response.status}`);
+          } else {
+            setShowMessage(true);
+          }
+        } catch (error) {
+          console.log(error);
+        }
         setData((prev) => {
           return { ...prev, name: "", email: "", message: "" };
         });
