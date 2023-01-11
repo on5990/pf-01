@@ -85,16 +85,13 @@ function Project({ data }) {
           <div className="text-container">
             <h1>{data.name}</h1>
             <p>{data.description}</p>
-            <div className="tags-container">
-              {data.techUsed &&
-                data.techUsed.map((item) => {
-                  return <div className="tag">{item.name}</div>;
-                })}
-              {/* <div className="tag">ReactJS</div>
-              <div className="tag">NodeJS</div>
-              <div className="tag">PostgreSQL</div> */}
-            </div>
           </div>
+        </div>
+        <div className="tags-container">
+          {data.techUsed &&
+            data.techUsed.map((item) => {
+              return <div className="tag">{item.name}</div>;
+            })}
         </div>
         <div className="button-container">
           <button
