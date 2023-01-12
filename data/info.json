@@ -2,72 +2,29 @@
   "projects": [
     {
       "id": "17816ff4-8352-4c85-aef8-cbf0792409a3",
-      "name": "Proyecto 1",
-      "description": "11et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
-      "image": "/logos/git_logo1.png",
+      "name": "Portafolio",
+      "description": "Sitio web que cumple la función de dar a conocer las tecnologías conocidas y los proyectos realizados, además de ofrecer una instancia de contacto. ",
+      "image": "/images/pf.png",
       "techUsed": [
+        { "name": "NextJS" },
         { "name": "ReactJS" },
-        { "name": "NodeJS" },
-        { "name": "PostgreSQL" },
-        { "name": "Sequelize" },
-        { "name": "HTML" },
-        { "name": "CSS" }
+        { "name": "Sass" }
       ],
-      "repoLink": "https://github.com/on5990",
-      "demoLink": "https://github.com/on5990"
+      "repoLink": "https://github.com/on5990/pf-01",
+      "demoLink": "https://github.com/on5990/pf-01"
     },
     {
       "id": "3959b514-d815-4649-9102-c8a74d65e5c8",
-      "name": "Proyecto 2",
-      "description": "22et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
-      "image": "/logos/git_logo1.png",
+      "name": "Sistema de apoyo a la gestión de planes estratégicos",
+      "description": "Sistema web que registra la información de planes estratégicos, para luego hacer seguimiento de indicadores de rendimiento y recursos. Al ser un trabajo de titulación por motivos de derechos de autor no es posible mostrar el repositorio.",
+      "image": "/images/sis.png",
       "techUsed": [
         { "name": "ReactJS" },
         { "name": "NodeJS" },
+        { "name": "ExpressJS" },
         { "name": "PostgreSQL" },
-        { "name": "Sequelize" }
-      ],
-      "repoLink": "",
-      "demoLink": ""
-    },
-    {
-      "id": "834974b4-9a3b-41dd-9686-4167d1688882",
-      "name": "Proyecto 3",
-      "description": "33et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
-      "image": "/logos/git_logo1.png",
-      "techUsed": [
-        { "name": "ReactJS" },
-        { "name": "NodeJS" },
-        { "name": "PostgreSQL" },
-        { "name": "Sequelize" }
-      ],
-      "repoLink": "https://github.com/on5990",
-      "demoLink": ""
-    },
-    {
-      "id": "14d008d1-8fc6-4fea-b14f-6a94d7d901d7",
-      "name": "Proyecto 4",
-      "description": "44et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
-      "image": "/logos/git_logo1.png",
-      "techUsed": [
-        { "name": "ReactJS" },
-        { "name": "NodeJS" },
-        { "name": "PostgreSQL" },
-        { "name": "Sequelize" }
-      ],
-      "repoLink": "",
-      "demoLink": "https://github.com/on5990"
-    },
-    {
-      "id": "895feb67-f324-43e4-8b11-2bd6af1a1732",
-      "name": "Proyecto 5",
-      "description": "55et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis",
-      "image": "/logos/git_logo1.png",
-      "techUsed": [
-        { "name": "ReactJS" },
-        { "name": "NodeJS" },
-        { "name": "PostgreSQL" },
-        { "name": "Sequelize" }
+        { "name": "Sequelize" },
+        { "name": "CSS" }
       ],
       "repoLink": "",
       "demoLink": ""
@@ -81,6 +38,8 @@
     { "name": "Express", "logo": "/logos/exp_logo2.png" },
     { "name": "ReactJS", "logo": "/logos/react_logo.png" },
     { "name": "PostgreSQL", "logo": "/logos/psql_logo.png" },
-    { "name": "Sequelize", "logo": "/logos/sequelize_logo.png" }
+    { "name": "Sequelize", "logo": "/logos/sequelize_logo.png" },
+    { "name": "Sass", "logo": "/logos/sass_logo.png" },
+    { "name": "NextJS", "logo": "/logos/nextjs_logo.png" }
   ]
 }

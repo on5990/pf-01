@@ -3,7 +3,6 @@ import React from "react";
 function Header({ refs }) {
   const { refAbout, refProjects, refTech, refContact } = refs;
   const goToAbout = () => {
-    console.log("CLICKED ABOUT");
     refAbout.current?.scrollIntoView({ behavior: "smooth" });
   };
   const goToProjects = () => {

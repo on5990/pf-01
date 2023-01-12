@@ -69,7 +69,7 @@ function Project({ data }) {
       <div className="project">
         <div className="project-content">
           <div className="image-container">
-            <Image fill alt="proy1" src="/images/ex_project.png" />
+            <Image fill alt="proy1" src={data.image} />
           </div>
           <div className="text-container">
             <h1>{data.name}</h1>
@@ -87,7 +87,7 @@ function Project({ data }) {
             <a href={data.repoLink} target="_blank">
               <button>
                 <div className="git-logo-div">
-                  <Image src={data.image} alt="Github" fill />
+                  <Image src={"/logos/git_logo1.png"} alt="Github" fill />
                 </div>
                 <p>Repositorio</p>
               </button>
