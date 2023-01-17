@@ -67,12 +67,12 @@ function Project({ data }) {
   return (
     <>
       <div className="project">
+        <h1>{data.name}</h1>
         <div className="project-content">
           <div className="image-container">
             <Image fill alt="proy1" src={data.image} />
           </div>
           <div className="text-container">
-            <h1>{data.name}</h1>
             <p>{data.description}</p>
           </div>
         </div>

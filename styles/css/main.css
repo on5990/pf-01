@@ -206,6 +206,10 @@ header nav ul li:hover {
   margin-bottom: 2vh;
   border-radius: 5px;
 }
+.project h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
 .project .project-content {
   display: flex;
   justify-content: space-between;
@@ -214,7 +218,7 @@ header nav ul li:hover {
   height: auto;
 }
 .project .project-content .image-container {
-  height: 30vh;
+  height: 25vh;
   width: 20vw;
   min-height: 160px;
   min-width: 180px;
