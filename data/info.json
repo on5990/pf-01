@@ -14,6 +14,20 @@
       "demoLink": "https://pf-01.vercel.app/"
     },
     {
+      "id": "0a350cb9-1908-4fee-88a0-85ac1af019a7",
+      "name": "Controlador de gastos",
+      "description": "Herramienta diseñada para permitir llevar un control de las finanzas. Permite ingresar gastos, categorizarlos y definir presupuestos. Además, permite agregar deudas, y actualizar los pagos correspondientes, lo que contribuye a la gestión efectiva de las finanzas personales.",
+      "image": "/images/exp_tracker.png",
+      "techUsed": [
+        { "name": "NextJS" },
+        { "name": "ReactJS" },
+        { "name": "Sass" },
+        { "name": "MongoDB" }
+      ],
+      "repoLink": "https://github.com/on5990/exp_tracker_webapp",
+      "demoLink": "https://exp-tracker-khaki.vercel.app/"
+    },
+    {
       "id": "3959b514-d815-4649-9102-c8a74d65e5c8",
       "name": "Sistema de apoyo a la gestión de planes estratégicos",
       "description": "Sistema web que registra la información de planes estratégicos, para luego hacer seguimiento de indicadores de rendimiento y recursos. Al ser un trabajo de titulación por motivos de derechos de autor no es posible mostrar el repositorio.",
@@ -40,6 +54,7 @@
     { "name": "PostgreSQL", "logo": "/logos/psql_logo.png" },
     { "name": "Sequelize", "logo": "/logos/sequelize_logo.png" },
     { "name": "Sass", "logo": "/logos/sass_logo.png" },
-    { "name": "NextJS", "logo": "/logos/nextjs_logo.png" }
+    { "name": "NextJS", "logo": "/logos/nextjs_logo.png" },
+    { "name": "MongoDB", "logo": "/logos/mongodb_logo.png" }
   ]
 }
