@@ -188,17 +188,17 @@ function ContactInfo() {
         <p>Contacto: on5990@gmail.com</p>
         <p>Ubicación: Santiago, Chile</p>
         <div className="links-div">
-          <a href="https://github.com/on5990" target="_blank">
-            <div className="logo-div">
-              <Image alt="LinkedIn" src="/logos/linkedin_logo.png" fill />
-            </div>
-          </a>
           <a
             href="https://www.linkedin.com/in/oscar-enrique-navarro-mondaca-bb6014257/"
             target="_blank"
           >
             <div className="logo-div">
-              <Image alt="LinkedIn" src="/logos/git_logo2.png" fill />
+              <Image alt="LinkedIn" src="/logos/linkedin_logo.png" fill />
+            </div>
+          </a>
+          <a href="https://github.com/on5990" target="_blank">
+            <div className="logo-div">
+              <Image alt="Github" src="/logos/git_logo2.png" fill />
             </div>
           </a>
         </div>
